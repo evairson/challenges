@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Espace client — NetSphère</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stage">
+  <div class="card">
+    <div class="head">Espace client</div>
+    <div class="body">
+      <p class="intro">Connectez-vous pour gérer votre compte.</p>
+      <form data-level="1" autocomplete="off">
+        <label for="u">Identifiant</label>
+        <input type="text" name="username" id="u">
+        <label for="p">Mot de passe</label>
+        <input type="password" name="password" id="p">
+        <button type="submit" class="submit">Se connecter</button>
+      </form>
+      <div class="links"><a href="index.html">← Autres espaces</a> · <span style="color:#bbb">Mot de passe oublié ?</span></div>
+      <div class="out"></div>
+      <div class="debug"><a data-toggleq>Aide : afficher la requête</a></div>
+      <pre class="q" data-q hidden>SELECT * FROM users WHERE username = '…' AND password = '…'</pre>
+      <p class="boot" data-boot>&nbsp;</p>
+    </div>
+  </div>
+  <div class="goals" data-goals></div>
+</div>
+<script src="engine.js"></script>
+</body>
+</html>

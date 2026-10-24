@@ -1,0 +1,74 @@
+/* Style « in-world » du site NetSphère (repris de la version HTML), limité à .ns */
+.ns{min-height:calc(100vh - 57px);background:#e9edf0;color:#333;
+  font-family:"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.5;
+  display:flex;align-items:flex-start;justify-content:center;padding:32px 24px}
+
+.ns .stage{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;justify-content:center}
+.ns .card{width:100%;max-width:340px;background:#fff;border:1px solid #d5dbe0;border-radius:5px;
+  box-shadow:0 1px 4px rgba(0,0,0,.08);overflow:hidden}
+.ns .card .head{background:#3b5998;color:#fff;padding:14px 18px;font-size:16px;font-weight:600}
+.ns .card .body{padding:20px 18px}
+.ns .card .intro{margin:0 0 16px;color:#888;font-size:13px}
+
+.ns label{display:block;font-weight:600;margin-bottom:4px;color:#444;font-size:13px}
+.ns input[type=text],.ns input[type=password]{width:100%;padding:9px 10px;margin-bottom:14px;
+  border:1px solid #ccd2d8;border-radius:3px;font-size:14px;background:#fdfdfd}
+.ns input:focus{outline:0;border-color:#3b5998;box-shadow:0 0 0 2px rgba(59,89,152,.15)}
+
+.ns button.submit{width:100%;background:#3b5998;color:#fff;border:0;border-radius:3px;
+  padding:10px;font-size:14px;font-weight:600;cursor:pointer}
+.ns button.submit:hover{background:#456bb0}
+.ns .links{margin-top:12px;font-size:12px;color:#999;text-align:center}
+.ns .links a{color:#3b5998;text-decoration:none}
+.ns .links a:hover{text-decoration:underline}
+
+.ns .out{margin-top:16px}.ns .out:empty{display:none}
+.ns .note{padding:9px 11px;border-radius:3px;font-size:13px;margin-bottom:10px}
+.ns .note.win{background:#eafaf1;border:1px solid #abebc6;color:#1e8449}
+.ns .note.err{background:#fdedec;border:1px solid #f5b7b1;color:#a93226}
+.ns .php-warn{background:#fcf8e3;border:1px solid #e6d8a0;color:#8a6d3b;font-family:"Courier New",monospace;
+  font-size:11.5px;padding:9px 11px;border-radius:3px;margin-bottom:10px;overflow-x:auto}
+.ns table.data{border-collapse:collapse;width:100%;font-size:12.5px;border:1px solid #dfe4e6;margin-top:2px}
+.ns table.data th,.ns table.data td{border:1px solid #e6eaec;padding:6px 8px;text-align:left}
+.ns table.data th{background:#f5f7f8;color:#888;font-size:11px;text-transform:uppercase}
+.ns table.data td{font-family:"Courier New",monospace;font-size:12px;color:#444}
+.ns .debug{margin-top:12px;font-size:11px;text-align:right}
+.ns .debug a{color:#c2c8cd;cursor:pointer}
+.ns pre.q{margin:6px 0 0;background:#2c3e50;color:#7fd1e0;font-family:"Courier New",monospace;font-size:11.5px;
+  padding:8px 10px;border-radius:3px;white-space:pre-wrap;word-break:break-word;overflow-x:auto}
+.ns pre.q[hidden]{display:none}
+.ns .boot{margin:8px 0 0;font-size:11px;color:#bbb;text-align:center}
+
+/* panneau objectifs de l'exercice */
+.ns .goals{width:100%;max-width:300px;background:#fff;border:1px solid #d5dbe0;border-radius:5px;
+  box-shadow:0 1px 4px rgba(0,0,0,.08);padding:14px 16px;font-size:13px}
+.ns .goals-head{font-weight:700;color:#2c3e50;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center}
+.ns .goals-head .prog{font-size:12px;font-weight:600;color:#fff;background:#3b5998;border-radius:10px;padding:1px 8px}
+.ns .goal{display:flex;align-items:center;gap:8px;padding:6px 0;border-top:1px solid #eef1f4}
+.ns .goal:first-of-type{border-top:0}
+.ns .goal .mk{width:16px;text-align:center;color:#c2c8cd;font-weight:700}
+.ns .goal.ok .mk{color:#27ae60}
+.ns .goal .lb{flex:1;color:#555}
+.ns .goal.ok .lb{color:#1e8449;text-decoration:line-through;text-decoration-color:#abebc6}
+.ns .goal .diff{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;
+  border-radius:3px;padding:2px 6px;white-space:nowrap}
+.ns .goal .diff.d1{background:#eafaf1;color:#27ae60}
+.ns .goal .diff.d2{background:#fef5e7;color:#d68910}
+.ns .goal .diff.d3{background:#fdedec;color:#c0392b}
+.ns .unlocked{margin-top:12px;padding-top:10px;border-top:1px dashed #d5dbe0;font-weight:700;color:#8e44ad;
+  font-size:12.5px;display:flex;justify-content:space-between;align-items:center}
+.ns .locked{margin-top:12px;padding:9px 11px;background:#f4f6f8;border:1px dashed #cfd6dc;border-radius:4px;
+  color:#95a5a6;font-size:12px;text-align:center}
+
+/* petite page d'index : liste des connexions */
+.ns .menu{width:100%;max-width:340px}
+.ns .menu h1{font-size:18px;color:#3b5998;margin:0 0 4px;text-align:center}
+.ns .menu p{margin:0 0 16px;color:#888;font-size:13px;text-align:center}
+.ns .menu a{display:block;background:#fff;border:1px solid #d5dbe0;border-radius:4px;padding:14px 16px;
+  margin-bottom:10px;color:#333;text-decoration:none;font-weight:600}
+.ns .menu a:hover{border-color:#3b5998;color:#3b5998}
+.ns .menu a span{display:block;font-weight:400;font-size:12px;color:#999;margin-top:2px}
+
+.ns .note.gain{background:#f4ecf7;border:1px solid #d7bde2;color:#8e44ad;font-weight:700;text-align:center}
+.ns button.submit:disabled{opacity:.7;cursor:wait}
+.ns .note.gain{text-align:left;font-weight:600}
